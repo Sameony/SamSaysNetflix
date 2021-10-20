@@ -1,0 +1,14 @@
+.navLogos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_Logo{
+    width: 40rem;
+    cursor: pointer;
+}
+.nav_avatar_Logo{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
