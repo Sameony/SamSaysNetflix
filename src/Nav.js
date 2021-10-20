@@ -1,12 +1,31 @@
 import React from 'react';
+import { useState, useEffect }  from 'react';
 import "./nav.css";
 
 function Nav() {
+    const [show, updateShow] = useState(false);
+    const transitionNavBar = ()=>{
+        if(window.scrollY > 50)
+        {
+            updateShow(true);
+        }
+        else
+        {
+            updateShow(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", transitionNavBar);
+        return () => {
+            window.removeEventListener("scroll",transitionNavBar);
+        }
+    }, [show])
     return (
-        <div className="navBar">
+        <div className={`navBar ${show && "nav__black"}`}>
             <div className="navLogos">
                 <img className="nav_Logo"
-                 src="https://www.thebullwark.in/images/clients/netflix.jpg" alt="netflix logo">
+                 src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="netflix logo">
 
                 </img>
                 <img className="nav_avatar_Logo"
@@ -14,7 +33,10 @@ function Nav() {
 
                 </img>
             </div>
+
+            
         </div>
+        
     )
 }
 
