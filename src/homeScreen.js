@@ -1,16 +1,16 @@
 import React from 'react';
+import banner from './banner';
 import "./homeScreen.css";
 import Nav from './Nav';
 
 function HomeScreen() {
     return (
         <div className="homeScreen">
-            <h1>homeScreen has started!</h1>
             {/* Navigation */}
             <Nav></Nav>
-
+            
             {/* Banner */}
-
+            <banner></banner>
             {/* Row */}
         </div>
     )
