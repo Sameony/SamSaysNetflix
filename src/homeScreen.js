@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from './banner';
+import Banner from './banner';
 import "./homeScreen.css";
 import Nav from './Nav';
 
@@ -10,7 +10,7 @@ function HomeScreen() {
             <Nav></Nav>
             
             {/* Banner */}
-            <banner></banner>
+            <Banner></Banner>
             {/* Row */}
         </div>
     )
