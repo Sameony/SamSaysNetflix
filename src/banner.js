@@ -18,7 +18,7 @@ function banner() {
             </div>
             <h1 className="banner_description"> Testing description</h1>
         </div>
-        <div className="banner--fadeBottom:" />
+        <div className="banner--fadeBottom" />
         </header>
     )
 }
