@@ -1,0 +1,88 @@
+::npx create-react-app sam-says-netflix --template redux 
+(create the app with redux template)
+
+------------------------------------
+gyan::
+npx=(Executes <command> either from a local node_modules/.bin, or 
+from a central cache, installing any packages needed in order for <command> to run.
+
+By default, npx will check whether <command> exists in $PATH, or in the 
+local project binaries, and execute that. If <command> is not found, 
+it will be installed prior to execution.
+
+Unless a --package option is specified, npx will try to guess the name of 
+the binary to invoke depending on the specifier provided. 
+
+All package specifiers understood by npm may be used with npx, including 
+git specifiers, remote tarballs, local directories, or scoped packages.
+
+If a full specifier is included, or if --package is used, npx will 
+always use a freshly-installed, temporary version of the package. This 
+can also be forced with the --ignore-existing flag.)
+--------------------------------------
+
+::create project in firebase
+
+give names n stuffs
+click on </> (web app)
+do up to step 4
+go to console on and copy stuff from the there; make new firebase.js 
+file in *app.js directory*
+authentication in firebase :(add email and password)
+
+---------------------------
+Few things to understand:
+
+npm: run command is mandatory to execute user defined scripts.
+yarn: run command is not mandatory to execute user defined scripts.
+
+start command is not a user defined script name, so you may not need 
+to specify run command to execute it.
+
+So, all the below commands work similar!
+
+npm start
+npm run start
+yarn start
+yarn run start
+If you have a user defined script named 'app':
+
+npm app (Does not work!)
+npm run app (Works!)
+yarn app (Works!)
+yarn run app (Works!)
+Note: By default start runs node server.js in case not explicitly defined.
+--------------------------------
+
+
+
+AXIOS
+---------------------------------------------------
+In ReactJS, Axios is a library that serves to create HTTP requests 
+that are present externally. It is evident from the fact that we 
+may sometimes in React applications need to get data from the external source.
+Axios allows us to communicate with APIs easily in our React apps. 
+Though this can also be achieved by other methods like fetch or AJAX, 
+Axios can provide a little more functionality that goes a long way with 
+applications that use React.  
+
+Axios is a promise-based library used with Node.js and your browser 
+to make asynchronous JavaScript HTTP requests. 
+
+
+
+
+
+when we make a request we can append it to the instance: google daloge to 
+sari request google se start hongi (base url jo bhi h)
+here:
+>>const instance = axios.create({
+	baseURL:"https://api.themoviedb.org/3"
+})
+
+remember to export default instance to use it outside of its own (importable)
+---------------------------------------------------
+
+Props allow us to customize same component with different style: we will build the layout
+of one row, display the same several times, (1 row component call 7 times) 
+and use props to display them differently.

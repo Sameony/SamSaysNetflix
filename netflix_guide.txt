@@ -1,0 +1,32 @@
+Day 1
+
+react uses components (component based designs)
+different page = different components(reusability)
+class based components / function based components *
+old and most built companies use class based
+
+hooks allow class based functions to become redundant
+before: no state in functional components
+now: u can (hooks)
+stronk n powerful :O
+customizable
+
+state:
+the state of a variable in react, how u write it/define it
+allows a component to create and manage their own data
+isolation (states are isolated from each other)
+useState hook adds state to functional component
+ 
+props (properties)
+pass data to customize a component
+
+redux
+global store: access to every component, two way communication
+pull n push anything from any to any component
+
+firebase
+hosting
+cloud firestore - realtime synchronised database
+firebase authentication
+payment processing ( cloud functions)
+free, fast
