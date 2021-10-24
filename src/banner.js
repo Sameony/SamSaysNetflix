@@ -35,7 +35,7 @@ function truncate(string, n)
          className="banner"
          style={{
             backgroundSize: "cover",
-            backgroundImage: `url("https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2069&q=80")`,
+            backgroundImage: `url("http://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
             backgroundPosition: "center center",
         }}>
         <div className="bannerContents">
