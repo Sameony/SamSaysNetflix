@@ -22,8 +22,8 @@
 
 .nav_Logo{
     position: fixed;
-    padding-left: 15px;
-    top:10px;
+    /* padding-left: 10px; */
+    top:8px;
     width: 10rem;
     object-fit: contain;
     cursor: pointer;
