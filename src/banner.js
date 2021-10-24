@@ -39,12 +39,12 @@ function truncate(string, n)
             backgroundPosition: "center center",
         }}>
         <div className="bannerContents">
-            <h1 className="banner_title">Movie Name</h1>
+            <h1 className="banner_title">{movie?.title || movie?.original_title}</h1>
             <div className="banner_buttons">
                 <button className="actualBannerButton">Play</button>
                 <button className="actualBannerButton">My List</button>
             </div>
-            <h1 className="banner_description"> {truncate("Check check check check checkCheck check check check checkCheck check check check checkCheck check check check check", 140)}</h1>
+            <h1 className="banner_description"> {truncate(movie?.overview,140)}</h1>
         </div>
         <div className="banner--fadeBottom" />
         </header>
